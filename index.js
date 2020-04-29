@@ -1,4 +1,5 @@
 'use strict';
+import $ from 'jquery';
 
-const divQRcode = document.getElementById('qrcode');
+const divQRcode = $('#qrcode');
 divQRcode.innerText = 'index.js からの書き換えテスト';
