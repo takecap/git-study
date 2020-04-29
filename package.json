@@ -5,7 +5,5 @@
   "repository": "git@github.com:takecap/git-study.git",
   "author": "Takeshi Tsukada <iinumaleaguer@yahoo.co.jp>",
   "license": "MIT",
-  "dependencies": {
-    "jquery": "^3.5.0"
-  }
+  "dependencies": {}
 }
