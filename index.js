@@ -1,4 +1,11 @@
 'use strict';
 
+const createButton = $('#create');
+const textArea = $('#inputText');
 const divQRcode = $('#qrcode');
-divQRcode.text('jquery を利用したテキストの書き換えです');
+
+createButton.click(() => {
+  let text = textArea.val();
+  divQRcode.text(text);
+  return false; // 実行後にページ遷移させないため
+});
