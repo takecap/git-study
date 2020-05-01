@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Git の勉強</title>
 </head>
-<body>
-    <h1>QRコードを生成します</h1>
+<body class="container">
+    <h1 class="p-3">QRコードを生成します</h1>
     <form>
-        <input type="text" id="inputText" size="100">
-        <button id="create">生成</button>
+        <input type="text" id="inputText" class="form-control m-2">
+        <button id="create" class="btn btn-primary m-2">生成</button>
     </form>
-    <div id="qrcode"></div>
+    <div id="qrcode" class="m-3"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.qrcode.js"></script>
