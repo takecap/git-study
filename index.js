@@ -6,6 +6,11 @@ const divQRcode = $('#qrcode');
 
 createButton.click(() => {
   let text = textArea.val();
-  divQRcode.text(text);
+  textArea.val('');
+  divQRcode.qrcode({
+    text: text,
+    width: 600,
+    height: 600
+  })
   return false; // 実行後にページ遷移させないため
 });
