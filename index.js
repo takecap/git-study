@@ -9,8 +9,8 @@ createButton.click(() => {
   textArea.val('');
   divQRcode.qrcode({
     text: text,
-    width: 600,
-    height: 600
+    width: 400,
+    height: 400
   })
   return false; // 実行後にページ遷移させないため
 });
