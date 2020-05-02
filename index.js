@@ -5,10 +5,11 @@ const textArea = $('#inputText');
 const divQRcode = $('#qrcode');
 
 createButton.click(() => {
-  let text = textArea.val();
+  const text = textArea.val();
+  const utf8text = unescape(encodeURIComponent(text));
   textArea.val('');
   divQRcode.qrcode({
-    text: text,
+    text: utf8text,
     width: 400,
     height: 400
   })
